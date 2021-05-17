@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podróż po stolicach Europy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+   
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3>Informacje o <span>Berlinie </span></h3>
+      </div>
+      <div class="right_area">
+        <a href="http://127.0.0.1:58756/index.html" class="logout_btn">Wróć</a>
+      </div>
+    </header>
+   
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <img src="1.png" class="mobile_profile_image" alt="">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+    </div>
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="1.png" class="profile_image" alt="">
+        <h4>Anonymus</h4>
+      </div>
+         <a href="http://127.0.0.1:58756/Niemcy.html"><i class="fas fa-globe-europe"></i><span>Niemcy</span></a>
+        <a href="http://127.0.0.1:58756/Francja.html"><i class="fas fa-globe-europe"></i><span>Francja</span></a>
+        <a href="http://127.0.0.1:58756/Włochy.html"><i class="fas fa-globe-europe"></i><span>Włochy</span></a>
+        <a href="http://127.0.0.1:58756/Polska.html"><i class="fas fa-globe-europe"></i><span>Polska</span></a>
+        <a href="http://127.0.0.1:58756/Rosja.html"><i class="fas fa-globe-europe"></i><span>Rosja</span></a>
+        <a href="http://127.0.0.1:58756/Watykan.html"><i class="fas fa-globe-europe"></i><span>Watykan</span></a>
+        <a href="http://127.0.0.1:58756/Szwecja.html"><i class="fas fa-globe-europe"></i><span>Szwecja</span></a>
+        <a href="http://127.0.0.1:58756/Ukraina.html"><i class="fas fa-globe-europe"></i><span>Ukraina</span></a>
+        <a href="http://127.0.0.1:58756/Wegry.html"><i class="fas fa-globe-europe"></i><span>Wegry</span></a>
+        <a href="http://127.0.0.1:58756/Belgia.html"><i class="fas fa-globe-europe"></i><span>Belgia</span></a>
+    </div>
+    
+
+    <div class="content">
+      <div class="card">
+        <p>Berlin jest stolicą Niemiec</p>
+      </div>
+      <div class="card">
+        <img src="Berlin.png">
+      </div>
+      <div class="card">
+        <p>Ciekawostki:</p>
+        <p>Berlin jest stolicą i największym miastem Niemiec.</p>
+        <p>Pierwsza wzmianka o Berlinie pochodzi z roku 1237. </p>
+        <p>W Berlinie znajduje się ponad 180 muzeów.</p>
+        <p>G4.Na terenie berlina powstało około 1700 mostów.</p>
+        <p>Pomimo, że ponad 5000 osób pokonało mur berliński, nie wszyscy mieli tyle szczęścia.</p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+
+  </body>
+</html>
